@@ -1,6 +1,6 @@
 package com.mypack;
 
-class ThreadDemo extends Thread{
+class ThreadDemoClass extends Thread{
 	public void run() {
 		
 		System.out.println("Run method executed by Thread: "+Thread.currentThread().getName());
