@@ -8,7 +8,7 @@ class ThreadDemoClass extends Thread{
 }
 class ThreadClass {
 	public static void main(String[] args) {
-		ThreadDemo td = new ThreadDemo();
+		ThreadDemoClass td = new ThreadDemoClass();
 		td.start();
 		System.out.println("Main method executed by Thread: "+Thread.currentThread().getName());
 	}
