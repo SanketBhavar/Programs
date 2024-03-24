@@ -11,5 +11,6 @@ public class ThreadDemo9 {
 		Thread.sleep(3000);
 		System.out.println("A");
 		Thread.sleep(3000);
+		//sleep() method- If a Thread don't want to perform any operation for a particular amount of time then we should go for sleep method.
 	}
 }
