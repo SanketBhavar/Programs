@@ -19,6 +19,8 @@ class MyThread10 extends Thread {
 
 public class ThreadDemo10 {
 	public static void main(String[] args) {
-		
+		MyThread10 t = new MyThread10();
+		t.start();
+		System.out.println("End of main thread");
 	}
 }
