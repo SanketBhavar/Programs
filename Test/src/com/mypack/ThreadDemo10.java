@@ -21,6 +21,14 @@ public class ThreadDemo10 {
 	public static void main(String[] args) {
 		MyThread10 t = new MyThread10();
 		t.start();
+		t.interrupt();
+		//interrupt()- We can interrupt a sleeping or waiting Thread by using interrupt() method of Thread class.
 		System.out.println("End of main thread");
 	}
 }
+
+/*
+End of main thread
+I am Lazy Thread
+I got Interrupted..!
+*/
