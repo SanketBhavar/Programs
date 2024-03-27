@@ -3,12 +3,12 @@ package com.mypack;
 class MyThread11 extends Thread {
 	public void run()
 	{
+		for(int i=0;i<5;i++)
+		{
+			System.out.println("I am Lazy Thread");
+		}
 		try {
-			for(int i=0;i<5;i++)
-			{
-				System.out.println("I am Lazy Thread");
-				Thread.sleep(2000);
-			}
+			Thread.sleep(2000);
 		}
 		catch(InterruptedException e)
 		{
@@ -27,3 +27,12 @@ public class ThreadDemo11 {
 	}
 }
 
+/*
+End of main thread
+I am Lazy Thread
+I am Lazy Thread
+I am Lazy Thread
+I am Lazy Thread
+I am Lazy Thread
+I got Interrupted..!
+ */
