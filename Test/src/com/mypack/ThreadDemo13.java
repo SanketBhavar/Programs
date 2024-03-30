@@ -43,3 +43,17 @@ public class ThreadDemo13 {
 		t2.start();
 	}
 }
+
+/* Without Synchronized method
+ * 
+Good Morning: Good Morning: Rohit
+Good Morning: Virat
+Good Morning: Rohit
+Good Morning: Virat
+Good Morning: Rohit
+Good Morning: Virat
+Good Morning: Virat
+Good Morning: Rohit
+Good Morning: Virat
+Rohit
+ */
