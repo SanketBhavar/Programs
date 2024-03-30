@@ -1,7 +1,7 @@
 package com.mypack;
 
 class Display1 {
-	public void wish(String name)
+	public synchronized void wish(String name)
 	{
 		;;;;;;;;;;;//1 Lakh lines of code.
 		for(int i=0;i<5;i++)
@@ -57,3 +57,30 @@ Good Morning: Rohit
 Good Morning: Virat
 Rohit
  */
+
+/* With Synchronized method- but we can't expect exact order of execution. 
+ * sometime thread starts with Virat and sometime start with Rohit
+ * 
+Good Morning: Virat
+Good Morning: Virat
+Good Morning: Virat
+Good Morning: Virat
+Good Morning: Virat
+Good Morning: Rohit
+Good Morning: Rohit
+Good Morning: Rohit
+Good Morning: Rohit
+Good Morning: Rohit
+ */
+/*
+Good Morning: Rohit
+Good Morning: Rohit
+Good Morning: Rohit
+Good Morning: Rohit
+Good Morning: Rohit
+Good Morning: Virat
+Good Morning: Virat
+Good Morning: Virat
+Good Morning: Virat
+Good Morning: Virat
+*/
