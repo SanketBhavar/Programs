@@ -24,6 +24,7 @@ class ThreadA extends Thread {
 				total=total+i;
 			}
 			System.out.println("child thread giving notification call");
+			this.notify();
 		}
 	}
 }
