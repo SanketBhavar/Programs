@@ -39,17 +39,18 @@ class B {
 public class ThreadDemo16 implements Runnable {
 	A a = new A();
 	B b = new B();
-	ThreadDemo16()
+	public void m1() 
 	{
 		Thread t = new Thread(this);
 		t.start();
-		a.d1(b);  //main thread
+		a.d1(b); 	//this line expected by main thread.
 	}
 	public void run()
 	{
-		b.d2(a);  //child thread
+		b.d2(a);  //this line expected by child thread.
 	}
 	public static void main(String[] args) {
-		new ThreadDemo16();  //main thread
+		ThreadDemo16 td = new ThreadDemo16();  //main thread
+		td.m1();
 	}
 }
