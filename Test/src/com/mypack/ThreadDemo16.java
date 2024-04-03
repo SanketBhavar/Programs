@@ -54,3 +54,7 @@ public class ThreadDemo16 implements Runnable {
 		td.m1();
 	}
 }
+
+//Synchronized keyword is the cause for deadlock hence whenever we are using synchronized keyword we have to take special care.
+//In above program, we have not using synchronized keyword so that deadloack is not occur in this program.
+//but In this program, output is not in sync.
