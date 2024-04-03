@@ -1,7 +1,7 @@
 package com.mypack;
 
 class A {
-	public synchronized void d1(B b) {
+	public void d1(B b) {
 		System.out.println("Thread1 starts execution of d1() method");
 		try
 		{
@@ -19,7 +19,7 @@ class A {
 }
 
 class B {
-	public synchronized void d2(A a) {
+	public void d2(A a) {
 		System.out.println("Thread2 starts execution of d2() method");
 		try
 		{
@@ -37,8 +37,19 @@ class B {
 }
 
 public class ThreadDemo16 implements Runnable {
-	
+	A a = new A();
+	B b = new B();
+	ThreadDemo16()
+	{
+		Thread t = new Thread(this);
+		t.start();
+		a.d1(b);  //main thread
+	}
+	public void run()
+	{
+		b.d2(a);  //child thread
+	}
 	public static void main(String[] args) {
-		
+		new ThreadDemo16();  //main thread
 	}
 }
