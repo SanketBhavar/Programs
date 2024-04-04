@@ -1,7 +1,7 @@
 package com.mypack;
 
 class A1 {
-	public void d1(B1 b) {
+	public synchronized void d1(B1 b) {
 		System.out.println("Thread1 starts execution of d1() method");
 		try
 		{
@@ -14,12 +14,12 @@ class A1 {
 	}
 	public void last()
 	{
-		System.out.println("inside A, this is last() method");
+		System.out.println("inside A1, this is last() method");
 	}
 }
 
 class B1 {
-	public void d2(A1 a) {
+	public synchronized void d2(A1 a) {
 		System.out.println("Thread2 starts execution of d2() method");
 		try
 		{
@@ -32,7 +32,7 @@ class B1 {
 	}
 	public void last()
 	{
-		System.out.println("inside B, this is last() method");
+		System.out.println("inside B1, this is last() method");
 	}
 }
 
@@ -56,5 +56,5 @@ public class ThreadDemo17 implements Runnable {
 }
 
 //Synchronized keyword is the cause for deadlock hence whenever we are using synchronized keyword we have to take special care.
-//In above program, we have not using synchronized keyword so that deadloack is not occur in this program.
-//but In this program, output is not in sync.
+//In above program, we have using synchronized keyword for 2 methods so that deadloack is not occur in this program.
+//but In this program, output is in sync.
