@@ -1,7 +1,7 @@
 package com.mypack;
 
-class A {
-	public void d1(B b) {
+class A1 {
+	public void d1(B1 b) {
 		System.out.println("Thread1 starts execution of d1() method");
 		try
 		{
@@ -18,8 +18,8 @@ class A {
 	}
 }
 
-class B {
-	public void d2(A a) {
+class B1 {
+	public void d2(A1 a) {
 		System.out.println("Thread2 starts execution of d2() method");
 		try
 		{
@@ -37,8 +37,8 @@ class B {
 }
 
 public class ThreadDemo17 implements Runnable {
-	A a = new A();
-	B b = new B();
+	A1 a = new A1();
+	B1 b = new B1();
 	public void m1() 
 	{
 		Thread t = new Thread(this);
