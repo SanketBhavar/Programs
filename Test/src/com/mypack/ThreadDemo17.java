@@ -50,7 +50,7 @@ public class ThreadDemo17 implements Runnable {
 		b.d2(a);  //this line expected by child thread.
 	}
 	public static void main(String[] args) {
-		ThreadDemo17 td = new ThreadDemo17();  //main thread
+		ThreadDemo18 td = new ThreadDemo18();  //main thread
 		td.m1();
 	}
 }
