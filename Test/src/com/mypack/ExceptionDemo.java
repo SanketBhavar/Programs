@@ -8,6 +8,6 @@ public class ExceptionDemo {
 		doMoreStuff();
 	}
 	public static void doMoreStuff() {
-		System.out.println("Hello");
+		System.out.println("Hello..!!");
 	}
 }
