@@ -11,3 +11,10 @@ public class ExceptionDemo1 {
 		System.out.println(10/0);
 	}
 }
+
+/*
+ Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at com.mypack.ExceptionDemo1.doMoreStuff(ExceptionDemo1.java:11)
+	at com.mypack.ExceptionDemo1.doStuff(ExceptionDemo1.java:8)
+	at com.mypack.ExceptionDemo1.main(ExceptionDemo1.java:5) 
+ */
