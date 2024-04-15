@@ -8,7 +8,7 @@ public class ExceptionDemo1 {
 		doMoreStuff();
 	}
 	public static void doMoreStuff() {
-		System.out.println(10/0);
+		System.out.println(10/0);  //----->Exception handled by JVM
 	}
 }
 
