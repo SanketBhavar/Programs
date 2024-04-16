@@ -6,7 +6,7 @@ public class ExceptionDemo2 {
 	}
 	public static void doStuff() {
 		doMoreStuff();
-		System.out.println(10/0);  //----->Exception handled by JVM
+		System.out.println(10/0);  //----->Exception handled by JVM and program terminates abnormally
 	}
 	public static void doMoreStuff() {
 		System.out.println("Hello");
@@ -14,8 +14,8 @@ public class ExceptionDemo2 {
 }
 
 /*
- Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at com.mypack.ExceptionDemo1.doMoreStuff(ExceptionDemo1.java:11)
-	at com.mypack.ExceptionDemo1.doStuff(ExceptionDemo1.java:8)
-	at com.mypack.ExceptionDemo1.main(ExceptionDemo1.java:5) 
+ Hello
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at com.mypack.ExceptionDemo2.doStuff(ExceptionDemo2.java:9)
+	at com.mypack.ExceptionDemo2.main(ExceptionDemo2.java:5)
  */
