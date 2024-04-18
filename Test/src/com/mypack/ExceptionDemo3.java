@@ -3,9 +3,11 @@ package com.mypack;
 public class ExceptionDemo3 {
 	public static void main(String[] args) {
 		doStuff();
+		System.out.println(10/0);  //----->Exception handled by JVM and program terminates abnormally
 	}
 	public static void doStuff() {
-		doMoreStuff();	
+		doMoreStuff();
+		System.out.println("Hi.!!");
 	}
 	public static void doMoreStuff() {
 		System.out.println("Hello");
