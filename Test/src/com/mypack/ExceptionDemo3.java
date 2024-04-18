@@ -5,8 +5,7 @@ public class ExceptionDemo3 {
 		doStuff();
 	}
 	public static void doStuff() {
-		doMoreStuff();
-		System.out.println(10/0);  //----->Exception handled by JVM and program terminates abnormally
+		doMoreStuff();	
 	}
 	public static void doMoreStuff() {
 		System.out.println("Hello");
