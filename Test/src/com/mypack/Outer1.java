@@ -4,7 +4,7 @@ public class Outer1 {
 	class Inner1
 	{
 		public void methodOne() {
-			System.out.println("inner class method");
+			System.out.println("**Inner Class Method**");
 		}
 	}
 	public static void main(String[] args) {
@@ -15,7 +15,10 @@ public class Outer1 {
 //		i.methodOne();
 		
 //	2nd
-		Outer1.Inner1 i = new Outer1().new Inner1();
-		i.methodOne();
+//		Outer1.Inner1 i = new Outer1().new Inner1();
+//		i.methodOne();
+		
+//		3rd		
+		new Outer1().new Inner1().methodOne();
 	}
 }
