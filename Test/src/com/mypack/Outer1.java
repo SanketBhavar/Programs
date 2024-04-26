@@ -22,3 +22,7 @@ public class Outer1 {
 		new Outer1().new Inner1().methodOne();
 	}
 }
+
+/*
+**Inner Class Method**
+*/
