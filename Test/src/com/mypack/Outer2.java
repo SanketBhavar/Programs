@@ -10,4 +10,8 @@ public class Outer2 {
 		Inner2 i = new Inner2();
 		i.methodOne();
 	}
+	public static void main(String[] args) {
+		Outer2 o = new Outer2();
+		o.methodTwo();
+	}
 }
