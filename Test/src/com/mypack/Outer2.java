@@ -6,4 +6,8 @@ public class Outer2 {
 			System.out.println("Inner Class Method");
 		}
 	}
+	public void methodTwo() {
+		Inner2 i = new Inner2();
+		i.methodOne();
+	}
 }
