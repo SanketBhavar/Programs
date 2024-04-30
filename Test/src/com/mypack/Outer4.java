@@ -6,11 +6,15 @@ public class Outer4 {
 	class Inner4 {
 		public void methodOne()
 		{
-			System.out.println(x);
-			System.out.println(y);
+			System.out.println(x); //10
+			System.out.println(y); //20
 		}
 	}
 	public static void main(String[] args) {
 		new Outer4().new Inner4().methodOne();
 	}
 }
+/*
+ 10
+ 20
+ */
