@@ -12,4 +12,12 @@ public class Outer6 {
 		i.sum(100,200);
 		i.sum(1000,2000);
 	}
+	public static void main(String[] args) {
+		new Outer6().methodOne();
+	}
 }
+/*
+The sum: 30
+The sum: 300
+The sum: 3000
+ */
