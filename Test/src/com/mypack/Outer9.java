@@ -21,3 +21,7 @@ public class Outer9 {
 		p1.taste();	//Salty
 	}
 }
+/*
+Spicy
+Salty
+*/
