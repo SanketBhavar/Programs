@@ -21,9 +21,13 @@ public class Outer10 {
 				System.out.println("Child Specific method");
 			}
 		};
-		//p.methodOne();
 		p.taste();
 		PopCorn1 p1 = new PopCorn1();
 		p1.taste();
 	}
 }
+/*
+Child Specific method
+Salty
+Spicy
+*/
