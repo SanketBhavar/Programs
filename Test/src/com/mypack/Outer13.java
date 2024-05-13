@@ -12,6 +12,10 @@ public class Outer13 {
 							System.out.println("Child Thread");
 						}
 					}
-				})
+				}).start();
+		for(int i=0;i<10;i++)
+		{
+			System.out.println("Main Thread");
+		}
 	}
 }
