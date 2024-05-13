@@ -3,7 +3,7 @@ package com.mypack;
 public class Outer13 {
 	public static void main(String[] args) {
 		new Thread(
-				new Runnable()
+				new Runnable()		//Anonymous Inner Class that define inside Method Arguments.
 				{
 					public void run()
 					{
@@ -19,3 +19,25 @@ public class Outer13 {
 		}
 	}
 }
+/*
+Main Thread
+Main Thread
+Main Thread
+Main Thread
+Main Thread
+Main Thread
+Main Thread
+Child Thread
+Child Thread
+Child Thread
+Child Thread
+Child Thread
+Child Thread
+Child Thread
+Child Thread
+Child Thread
+Child Thread
+Main Thread
+Main Thread
+Main Thread
+*/
