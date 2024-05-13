@@ -12,7 +12,6 @@ public class Outer13 {
 							System.out.println("Child Thread");
 						}
 					}
-				}
-				).start();
+				})
 	}
 }
