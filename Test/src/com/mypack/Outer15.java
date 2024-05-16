@@ -10,3 +10,10 @@ public class Outer15 {
 		System.out.println("Outer class Main Method");
 	}
 }
+/*
+Outer15$Nested-
+Nested Class Main Method
+
+Outer15-
+Outer class Main Metho
+ */
