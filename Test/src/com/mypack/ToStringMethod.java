@@ -17,3 +17,8 @@ public class ToStringMethod {
 		System.out.println(t2);
 	}
 }
+/*
+com.mypack.ToStringMethod@515f550a
+com.mypack.ToStringMethod@515f550a
+com.mypack.ToStringMethod@cac736f
+*/
