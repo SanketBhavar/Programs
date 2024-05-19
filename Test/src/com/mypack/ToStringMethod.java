@@ -10,7 +10,7 @@ public class ToStringMethod {
 	}
 	
 	public String toString() {
-		return "Student Name:"+name +"and Roll No.:"+rollno;
+		return "Student Name:"+name +" and Roll No.:"+rollno;   //Overriding toString() method to provide our own string representation.
 	}
 	
 	public static void main(String[] args) {
@@ -21,6 +21,12 @@ public class ToStringMethod {
 		System.out.println(t2);
 	}
 }
+/*
+Student Name:Sanket and Roll No.:101
+Student Name:Sanket and Roll No.:101
+Student Name:Rahul and Roll No.:102
+*/
+
 /*
 com.mypack.ToStringMethod@515f550a
 com.mypack.ToStringMethod@515f550a
