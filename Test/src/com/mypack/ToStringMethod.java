@@ -9,6 +9,10 @@ public class ToStringMethod {
 		this.rollno=rollno;
 	}
 	
+	public String toString() {
+		return "Student Name:"+name +"and Roll No.:"+rollno;
+	}
+	
 	public static void main(String[] args) {
 		ToStringMethod t1 = new ToStringMethod("Sanket", 101);
 		ToStringMethod t2 = new ToStringMethod("Rahul", 102);
