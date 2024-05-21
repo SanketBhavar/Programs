@@ -10,6 +10,7 @@ public class HashCodeMethod {
 	{
 		HashCodeMethod h = new HashCodeMethod(10);
 		HashCodeMethod h1 = new HashCodeMethod(100);
-		
+		System.out.println(h);
+		System.out.println(h1);
 	}
 }
