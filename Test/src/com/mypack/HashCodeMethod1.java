@@ -16,3 +16,7 @@ public class HashCodeMethod1 {
 		System.out.println(h2);
 	}
 }
+/*
+com.mypack.HashCodeMethod1@a
+com.mypack.HashCodeMethod1@64
+*/
