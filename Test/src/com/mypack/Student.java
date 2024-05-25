@@ -9,6 +9,10 @@ public class Student {
 		this.rollno=rollno;
 	}
 	public static void main(String[] args) {
+		
+		//If our class doesn't contain .equals() method then object class .equals() method will be executed. 
+		//which is always meant for reference comparison[Address comparison].
+		
 		Student s1 = new Student("Sanket",101);
 		Student s2 = new Student("Rahul",102);
 		Student s3 = new Student("Sanket",101);
