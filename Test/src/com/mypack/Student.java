@@ -13,9 +13,13 @@ public class Student {
 		Student s2 = new Student("Rahul",102);
 		Student s3 = new Student("Sanket",101);
 		Student s4 = s1;
-		
 		System.out.println(s1.equals(s2));
 		System.out.println(s1.equals(s3));
 		System.out.println(s1.equals(s4));
 	}
 }
+/*
+false
+false
+true
+*/
