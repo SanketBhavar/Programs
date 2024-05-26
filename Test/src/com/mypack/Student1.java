@@ -37,5 +37,10 @@ public class Student1 {
 		Student1 s2 = new Student1("Ravi",102);
 		Student1 s3 = new Student1("Durga",101);
 		Student1 s4=s1;
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.equals(s3));
+		System.out.println(s1.equals(s4));
+		System.out.println(s1.equals("Durga"));		//
+		System.out.println(s1.equals(null));		//
 	}
 }
