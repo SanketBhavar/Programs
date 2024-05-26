@@ -18,8 +18,16 @@ public class Student1 {
 			int rollno2=s2.rollno;
 			if(name1.equals(name2) && rollno1==rollno2)
 			{
-				
+				return true;
 			}
+			else
+				return false;
+		}
+		catch(ClassCastException e)
+		{
+			return false;
+		}
+		
 		}
 	}
 }
