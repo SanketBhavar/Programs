@@ -33,6 +33,9 @@ public class Student1 {
 		}
 	}
 	public static void main(String[] args) {
+		
+		//Based on Programming Requirement, we can override .equals() method for content comparison purpose.
+		
 		Student1 s1 = new Student1("Durga",101);
 		Student1 s2 = new Student1("Ravi",102);
 		Student1 s3 = new Student1("Durga",101);
@@ -40,7 +43,14 @@ public class Student1 {
 		System.out.println(s1.equals(s2));
 		System.out.println(s1.equals(s3));
 		System.out.println(s1.equals(s4));
-		System.out.println(s1.equals("Durga"));		//
-		System.out.println(s1.equals(null));		//
+		System.out.println(s1.equals("Durga"));		//Handle Class Cast Exception.
+		System.out.println(s1.equals(null));		//Handle Null Pointer Exception.
 	}
 }
+/*
+false
+true
+true
+false
+false
+*/
