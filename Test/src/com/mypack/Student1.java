@@ -32,4 +32,7 @@ public class Student1 {
 			return false;
 		}
 	}
+	public static void main(String[] args) {
+		
+	}
 }
