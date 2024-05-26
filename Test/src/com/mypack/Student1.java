@@ -13,7 +13,7 @@ public class Student1 {
 		try {
 			String name1=this.name;
 			int rollno1=this.rollno;
-			Student s2=(Student)obj;
+			Student1 s2=(Student1)obj;
 			String name2=s2.name;
 			int rollno2=s2.rollno;
 			if(name1.equals(name2) && rollno1==rollno2)
@@ -33,6 +33,9 @@ public class Student1 {
 		}
 	}
 	public static void main(String[] args) {
-		
+		Student1 s1 = new Student1("Durga",101);
+		Student1 s2 = new Student1("Ravi",102);
+		Student1 s3 = new Student1("Durga",101);
+		Student1 s4=s1;
 	}
 }
