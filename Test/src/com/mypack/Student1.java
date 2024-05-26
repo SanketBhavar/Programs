@@ -27,7 +27,9 @@ public class Student1 {
 		{
 			return false;
 		}
-		
+		catch(NullPointerException e)
+		{
+			return false;
 		}
 	}
 }
