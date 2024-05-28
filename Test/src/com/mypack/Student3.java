@@ -10,24 +10,17 @@ public class Student3 {
 	}
 	public boolean equals(Object obj)
 	{
-		try {
-			Student3 s2 = (Student3)obj;
-			
-			if(name.equals(s2.name) && rollno==s2.rollno)
-			{
+		if(this==obj)
+			return true;
+		if(obj instanceof Student3)
+		{
+			Student3 s3 = (Student3)obj;
+			if(name.equals(s3.name) && rollno==s3.rollno)
 				return true;
-			}
 			else
 				return false;
 		}
-		catch(ClassCastException e)
-		{
-			return false;
-		}
-		catch(NullPointerException e)
-		{
-			return false;
-		}
+		return false;
 	}
 	public static void main(String[] args) {
 		
