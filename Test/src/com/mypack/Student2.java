@@ -44,3 +44,10 @@ public class Student2 {
 		System.out.println(s1.equals(null));		//Handle Null Pointer Exception.
 	}
 }
+/*
+false
+true
+true
+false
+false
+*/
