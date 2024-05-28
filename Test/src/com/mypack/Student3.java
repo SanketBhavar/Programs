@@ -25,6 +25,8 @@ public class Student3 {
 	public static void main(String[] args) {
 		
 		//Based on Programming Requirement, we can override .equals() method for content comparison purpose.
+		//More Simplified Version of .equals() method. 
+		//*****Recommended to Use*****
 		
 		Student3 s1 = new Student3("Durga",101);
 		Student3 s2 = new Student3("Ravi",102);
