@@ -11,5 +11,12 @@ public class StringDemo {
 		System.out.println(s3==s4);	//true
 		String s5 = "You cannot "+"change me!";
 		System.out.println(s3==s5);	//true
+		String s6 = "You cannot ";
+		String s7 = s6+"change me!";
+		System.out.println(s3==s7);	//false
+		final String s8 = "You cannot ";
+		String s9 = s8+"change me!";
+		System.out.println(s3==s9); //true
+		System.out.println(s6==s8);	//true
 	}
 }
