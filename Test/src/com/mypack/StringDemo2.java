@@ -5,5 +5,7 @@ public class StringDemo2 {
 		String s = "Durga";
 		System.out.println(s.charAt(3));	//g
 		//System.out.println(s.charAt(10));	//java.lang.StringIndexOutOfBoundsException
+		
+		s=s.concat("Software");
 	}
 }
