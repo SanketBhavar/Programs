@@ -7,6 +7,8 @@ public class StringDemo2 {
 		//System.out.println(s.charAt(10));	//java.lang.StringIndexOutOfBoundsException
 		
 		s=s.concat("Software");
+		System.out.println(s); //DurgaSoftware
+		s=s+"Solutions";
 		System.out.println(s);
 	}
 }
