@@ -8,9 +8,11 @@ public class StringDemo2 {
 		
 		//'+' and '+=' are also meant for Concatenation purpose only.
 		s=s.concat("Software");
+		//s=s+"Software";
+		//s+="Software";
 		System.out.println(s); //DurgaSoftware
-		s=s+"Solutions";
-		//s+="Solutions";
-		System.out.println(s);
+		
+		System.out.println(s.equals("DurgaSoftware"));	//true
+		
 	}
 }
