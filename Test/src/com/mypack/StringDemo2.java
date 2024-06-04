@@ -16,5 +16,6 @@ public class StringDemo2 {
 		System.out.println(s.equalsIgnoreCase("DURGASOFTWARE"));	//true
 		
 		System.out.println(s.substring(5));	//Software ----->Begin index
+		System.out.println(s.substring(0, 5));	//Durga ---->Begin index to end-1
 	}
 }
