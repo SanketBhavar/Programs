@@ -3,6 +3,8 @@ package com.mypack;
 public class StringDemo2 {
 	public static void main(String[] args) {
 		String s = "Durga";
+		String s1 = "      Durga Software Solutions    ";
+		
 		System.out.println(s.charAt(3));	//g
 		//System.out.println(s.charAt(10));	//java.lang.StringIndexOutOfBoundsException
 		
@@ -24,5 +26,11 @@ public class StringDemo2 {
 		
 		System.out.println(s.toLowerCase());	//durgasoftware
 		System.out.println(s.toUpperCase());	//DURGASOFTWARE
+		
+		System.out.println(s1.trim());	//Durga Software Solutions --->blank spaces present at beginning and end.
+		
+		System.out.println(s.indexOf('a'));		//4  --->index of 1st occurrence of specified character.
+		System.out.println(s.lastIndexOf('a'));	//10 --->index of last occurrence of specified character.
+		System.out.println(s.indexOf('z'));		//-1 --->if specified character is not available then return -1.
 	}
 }
