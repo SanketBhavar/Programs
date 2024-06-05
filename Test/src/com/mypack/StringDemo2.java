@@ -22,5 +22,7 @@ public class StringDemo2 {
 		
 		System.out.println(s.replace('a', 'h'));	//DurghSoftwhre
 		
+		System.out.println(s.toLowerCase());	//durgasoftware
+		System.out.println(s.toUpperCase());	//DURGASOFTWARE
 	}
 }
