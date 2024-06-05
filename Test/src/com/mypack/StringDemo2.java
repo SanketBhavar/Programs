@@ -17,5 +17,7 @@ public class StringDemo2 {
 		
 		System.out.println(s.substring(5));	//Software ----->Begin index
 		System.out.println(s.substring(0, 5));	//Durga ---->Begin index to end-1
+		
+		System.out.println(s.length());	//13
 	}
 }
