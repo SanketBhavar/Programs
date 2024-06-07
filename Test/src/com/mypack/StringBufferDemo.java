@@ -6,5 +6,9 @@ public class StringBufferDemo {
 		System.out.println(sb.length());	//5
 		System.out.println(sb.capacity());	//21
 		System.out.println(sb.charAt(4));	//a
+		
+		sb.setCharAt(3, 'G');
+		System.out.println(sb);	//DurGa
+		
 	}
 }
