@@ -32,5 +32,10 @@ public class StringBufferDemo {
 		sb.setLength(5);
 		System.out.println(sb);		//Durga		---->Consider only specified no. of characters and remove all the remaining characters.
 		
+		//trimToSize() method ---> Deallocate the extra free memory such that capacity and size are equal.
+		System.out.println(sb.capacity());		//21 ----->capacity before deallocates
+		sb.trimToSize();
+		System.out.println(sb.capacity());		//5 ------>capacity After deallocates
+		
 	}
 }
