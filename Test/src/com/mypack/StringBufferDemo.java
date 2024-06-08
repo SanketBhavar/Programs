@@ -9,6 +9,7 @@ public class StringBufferDemo {
 		
 		sb.setCharAt(3, 'G');
 		System.out.println(sb);	//DurGa
+		sb.setCharAt(3, 'g');
 		
 		//All these methods are Overloaded methods.
 		StringBuffer sb1 = new StringBuffer();
@@ -17,5 +18,8 @@ public class StringBufferDemo {
 		sb1.append(". This is exactly ");
 		sb1.append(true);
 		System.out.println(sb1);	//PI Value is: 3.14. This is exactly true
+		
+		sb.insert(5, "Software");
+		System.out.println(sb);
 	}
 }
