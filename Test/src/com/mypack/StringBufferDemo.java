@@ -27,6 +27,10 @@ public class StringBufferDemo {
 		System.out.println(sb);		//DurgaSoftware   ------>delete characters from begin index to end n-1 index.
 		
 		System.out.println(sb.reverse());	//erawtfoSagruD
+		sb.reverse();
+		
+		sb.setLength(5);
+		System.out.println(sb);		//Durga		---->Consider only specified no. of characters and remove all the remaining characters.
 		
 	}
 }
