@@ -20,6 +20,13 @@ public class StringBufferDemo {
 		System.out.println(sb1);	//PI Value is: 3.14. This is exactly true
 		
 		sb.insert(5, "Software");
-		System.out.println(sb);
+		sb.insert(13, 10);
+		System.out.println(sb);		//DurgaSoftware10
+		
+		sb.delete(13, 15);
+		System.out.println(sb);		//DurgaSoftware   ------>delete characters from begin index to end n-1 index.
+		
+		System.out.println(sb.reverse());	//erawtfoSagruD
+		
 	}
 }
