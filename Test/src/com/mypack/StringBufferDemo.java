@@ -37,5 +37,9 @@ public class StringBufferDemo {
 		sb.trimToSize();
 		System.out.println(sb.capacity());		//5 ------>capacity After deallocates
 		
+		//ensureCapacity()  ----> To increase the capacity dynamically based on our requirement.
+		System.out.println(sb.capacity());
+		sb.ensureCapacity(100);
+		System.out.println(sb.capacity());
 	}
 }
