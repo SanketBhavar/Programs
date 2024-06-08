@@ -2,6 +2,7 @@ package com.mypack;
 
 public class StringBufferDemo {
 	public static void main(String[] args) {
+		
 		StringBuffer sb =  new StringBuffer("Durga");
 		System.out.println(sb.length());	//5
 		System.out.println(sb.capacity());	//21
@@ -38,8 +39,8 @@ public class StringBufferDemo {
 		System.out.println(sb.capacity());		//5 ------>capacity After deallocates
 		
 		//ensureCapacity()  ----> To increase the capacity dynamically based on our requirement.
-		System.out.println(sb.capacity());
+		System.out.println(sb.capacity());	//5 ----->capacity before increasing.
 		sb.ensureCapacity(100);
-		System.out.println(sb.capacity());
+		System.out.println(sb.capacity());	//100 ----->capacity After increasing.
 	}
 }
