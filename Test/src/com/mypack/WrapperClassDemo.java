@@ -11,5 +11,8 @@ public class WrapperClassDemo {
 		System.out.println(b);	//false
 		
 		//valueOf() method: To create wrapper object for given primitive or String .
+		
+		Integer i1 = Integer.valueOf("1010",2);		//Converting radix string to Wrapper object.
+		System.out.println(i1);		//10
 	}
 }
