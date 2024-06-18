@@ -5,8 +5,10 @@ public class WrapperClassDemo2 {
 		int i = Integer.parseInt("10");
 		boolean b = Boolean.parseBoolean("Durga");
 		double d = Double.parseDouble("10.5");
-		System.out.println(i);
-		System.out.println(b);
-		System.out.println(d);
+		System.out.println(i);	//10
+		System.out.println(b);	//false
+		System.out.println(d);	//10.5
+		
+		//parseXxx() - To convert String to corresponding primitive.
 	}
 }
