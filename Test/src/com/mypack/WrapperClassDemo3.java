@@ -20,5 +20,13 @@ public class WrapperClassDemo3 {
 		String s5 = Integer.toString(11,16);
 		System.out.println(s4);		//111
 		System.out.println(s5);		//b
+		
+		//Form4
+		String s6 = Integer.toBinaryString(7);
+		String s7 = Integer.toOctalString(10);
+		String s8 = Integer.toHexString(20);
+		System.out.println(s6);
+		System.out.println(s7);
+		System.out.println(s8);
 	}
 }
