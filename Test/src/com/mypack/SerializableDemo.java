@@ -1,6 +1,6 @@
 package com.mypack;
 
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 class Dog implements Serializable
 {
@@ -9,7 +9,7 @@ class Dog implements Serializable
 }
 
 public class SerializableDemo {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Dog d1 = new Dog();
 		System.out.println("Serialization Started");
 		FileOutputStream fos = new FileOutputStream("abc.ser");
