@@ -25,3 +25,10 @@ public class SerializableDemo {
 		System.out.println(d2.i+".........."+d2.j);
 	}
 }
+/*
+Serialization Started
+Serialization Ended
+Deserialization Started
+Deserialization Ended
+10..........20
+*/
