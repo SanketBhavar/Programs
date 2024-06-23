@@ -5,7 +5,7 @@ import java.io.*;
 Serialization interface present in java.io.package and does not contain any methods. It is marker interface.
 We can add any no. of Objects to the file and we can read all those objects.
 */
-class Dog implements Serializable
+class Dog1 implements Serializable
 {
 	int i=10;
 	int j=20;
@@ -18,7 +18,7 @@ class Cat implements Serializable
 
 public class SerializableDemo1 {
 	public static void main(String[] args) throws Exception {
-		Dog d1 = new Dog();
+		Dog1 d1 = new Dog1();
 		Cat c1 = new Cat();
 		System.out.println("Serialization Started");
 		FileOutputStream fos = new FileOutputStream("abc.ser");
@@ -30,7 +30,7 @@ public class SerializableDemo1 {
 		System.out.println("Deserialization Started");
 		FileInputStream fis = new FileInputStream("abc.ser");
 		ObjectInputStream ois = new ObjectInputStream(fis);
-		Dog d2 = (Dog)ois.readObject();
+		Dog1 d2 = (Dog1)ois.readObject();
 		Cat c2 = (Cat)ois.readObject();
 		System.out.println("Deserialization Ended");
 		System.out.println(d2.i+".........."+d2.j);
