@@ -1,7 +1,10 @@
 package com.mypack;
 
 import java.io.*;
-
+/*
+Serialization interface present in java.io.package and does not contain any methods. It is marker interface.
+We can add any no. of Objects to the file and we can read all those objects.
+*/
 class Dog implements Serializable
 {
 	int i=10;
@@ -34,3 +37,11 @@ public class SerializableDemo1 {
 		System.out.println(c2.i+".........."+c2.j);
 	}
 }
+/*
+Serialization Started
+Serialization Ended
+Deserialization Started
+Deserialization Ended
+10..........20
+30..........40
+*/
