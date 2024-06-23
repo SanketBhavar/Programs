@@ -24,5 +24,13 @@ public class SerializableDemo1 {
 		oos.writeObject(c1);
 		System.out.println("Serialization Ended");
 		
+		System.out.println("Deserialization Started");
+		FileInputStream fis = new FileInputStream("abc.ser");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		Dog d2 = (Dog)ois.readObject();
+		Cat c2 = (Cat)ois.readObject();
+		System.out.println("Deserialization Ended");
+		System.out.println(d2.i+".........."+d2.j);
+		System.out.println(c2.i+".........."+c2.j);
 	}
 }
