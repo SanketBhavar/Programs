@@ -15,6 +15,14 @@ class Cat implements Serializable
 
 public class SerializableDemo1 {
 	public static void main(String[] args) throws Exception {
+		Dog d1 = new Dog();
+		Cat c1 = new Cat();
+		System.out.println("Serialization Started");
+		FileOutputStream fos = new FileOutputStream("abc.ser");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(d1);
+		oos.writeObject(c1);
+		System.out.println("Serialization Ended");
 		
 	}
 }
