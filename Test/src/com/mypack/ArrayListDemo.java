@@ -13,7 +13,7 @@ public class ArrayListDemo {
 		a.remove(2);
 		System.out.println(a);	//[A, 10, null]
 		a.add(2, "m");
-		a.add(n);
-		System.out.println(a);
+		a.add("n");
+		System.out.println(a);	//[A, 10, m, null, n]
 	}
 }
