@@ -11,6 +11,9 @@ public class ArrayListDemo {
 		a.add(null);
 		System.out.println(a);	//[A, 10, A, null]
 		a.remove(2);
+		System.out.println(a);	//[A, 10, null]
+		a.add(2, "m");
+		a.add(n);
 		System.out.println(a);
 	}
 }
