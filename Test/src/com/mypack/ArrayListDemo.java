@@ -9,6 +9,8 @@ public class ArrayListDemo {
 		a.add(10);
 		a.add("A");
 		a.add(null);
+		System.out.println(a);	//[A, 10, A, null]
+		a.remove(2);
 		System.out.println(a);
 	}
 }
