@@ -10,6 +10,8 @@ public class LinkedListDemo {
 		l.add(null);
 		l.add("Durga");
 		System.out.println(l);	//[Durga, 30, null, Durga]
-
+		l.set(0, "Software");
+		System.out.println(l);	//[Software, 30, null, Durga]
+		
 	}
 }
