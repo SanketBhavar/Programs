@@ -10,5 +10,7 @@ public class StackDemo {
 		s.push("C");
 		System.out.println(s);			//[A, B, C]
 		System.out.println(s.pop()); 	//C
+		System.out.println(s); 			//[A, B]
+		System.out.println(s.peek()); 	//B
 	}
 }
