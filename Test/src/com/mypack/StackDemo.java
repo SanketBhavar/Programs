@@ -8,6 +8,7 @@ public class StackDemo {
 		s.push("A");
 		s.push("B");
 		s.push("C");
-		System.out.println(s);
+		System.out.println(s);			//[A, B, C]
+		System.out.println(s.pop()); 	//C
 	}
 }
