@@ -15,6 +15,14 @@ public class StackDemo {
 		System.out.println(s.search("A"));	//2 - return index of element.
 		System.out.println(s.search("Z"));	//-1 -if element is not available in stack then returns -1.
 		System.out.println(s.empty()); 		//returns true if stack is empty otherwise returns false.
-		
 	}
 }
+/*
+[A, B, C]
+C
+[A, B]
+B
+2
+-1
+false
+*/
