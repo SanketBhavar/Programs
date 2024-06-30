@@ -11,6 +11,8 @@ public class StackDemo {
 		System.out.println(s);			//[A, B, C]
 		System.out.println(s.pop()); 	//C
 		System.out.println(s); 			//[A, B]
-		System.out.println(s.peek()); 	//B
+		System.out.println(s.peek()); 	//B - returns top of the stack element.
+		System.out.println(s.search("A"));	//2 - return index of element.
+		System.out.println(s.search("Z"));	//-1 -if element is not available in stack then returns -1.
 	}
 }
