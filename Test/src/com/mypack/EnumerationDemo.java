@@ -14,7 +14,7 @@ public class EnumerationDemo {
 		Enumeration e = v.elements();
 		while(e.hasMoreElements())
 		{
-			
+			Integer i = (Integer)e.nextElement();
 		}
 	}
 }
