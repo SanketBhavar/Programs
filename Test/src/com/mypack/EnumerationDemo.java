@@ -15,6 +15,8 @@ public class EnumerationDemo {
 		while(e.hasMoreElements())
 		{
 			Integer i = (Integer)e.nextElement();
+			if(i%2==0)
+				System.out.println(i);		//printing even numbers from vector.
 		}
 	}
 }
