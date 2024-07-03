@@ -15,11 +15,15 @@ public class ListIteratorDemo {
 		while(itr.hasNext())
 		{
 			String s = (String)itr.next();
-			if(s.equals("Venki"))
+			if(s.equals("venki"))
 			{
 				itr.remove();
 			}
 		}
-		//System.out.println(l);
+		System.out.println(l);		//[balakrishna, chiru, nag]
 	}
 }
+/*
+[balakrishna, venki, chiru, nag]
+[balakrishna, chiru, nag]
+*/
