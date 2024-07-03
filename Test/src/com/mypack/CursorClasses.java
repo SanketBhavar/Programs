@@ -7,7 +7,8 @@ import java.util.Vector;
 
 public class CursorClasses {
 	public static void main(String[] args) {
-		Vector v = new Vector<>();
+		
+		Vector v = new Vector();
 		Enumeration e = v.elements();
 		Iterator itr = v.iterator();
 		ListIterator litr = v.listIterator();
@@ -16,3 +17,9 @@ public class CursorClasses {
 		System.out.println(litr.getClass().getName()); 	//java.util.Vector$ListItr
 	}
 }
+//Cursors inner class names Example.
+/*
+java.util.Vector$1
+java.util.Vector$Itr
+java.util.Vector$ListItr
+*/
