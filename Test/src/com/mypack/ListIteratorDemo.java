@@ -17,13 +17,21 @@ public class ListIteratorDemo {
 			String s = (String)itr.next();
 			if(s.equals("venki"))
 			{
-				itr.remove();
+				itr.remove();			//[balakrishna, chiru, nag]
+			}
+			if(s.equals("chiru"))
+			{
+				itr.set("charan");		//[balakrishna, charan, nag]
+			}
+			if(s.equals("nag"))
+			{
+				itr.add("chaitu");		//[balakrishna, charan, nag, chaitu]
 			}
 		}
-		System.out.println(l);		//[balakrishna, chiru, nag]
+		System.out.println(l);		//[balakrishna, charan, nag, chaitu]
 	}
 }
 /*
 [balakrishna, venki, chiru, nag]
-[balakrishna, chiru, nag]
+[balakrishna, charan, nag, chaitu]
 */
