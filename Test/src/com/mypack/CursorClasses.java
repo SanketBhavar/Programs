@@ -11,5 +11,6 @@ public class CursorClasses {
 		Enumeration e = v.elements();
 		Iterator itr = v.iterator();
 		ListIterator litr = v.listIterator();
+		System.out.println(e.getClass().getName()); 	//java.util.Vector$1
 	}
 }
